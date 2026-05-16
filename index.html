@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit NR-1 — Adequação Obrigatória até 26/05/2026</title>
+  <meta name="description" content="Kit completo de adequação à NR-1 com 8 documentos editáveis. Evite multas de até R$ 67.039. Acesso imediato após pagamento." />
+  <meta property="og:title" content="Sua empresa tem 26 dias para se adequar à NR-1. A multa chega a R$ 67.039." />
+  <meta property="og:description" content="Kit com 8 documentos prontos para implementar em 4 semanas. R$ 19,90. Acesso imediato." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/1a1a1a/ffffff?text=Kit+NR-1" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #c0392b;
+      --red-dark: #962d22;
+      --black: #0f0f0f;
+      --dark: #1a1a1a;
+      --gray: #2c2c2c;
+      --light-gray: #f5f5f5;
+      --white: #ffffff;
+      --text-muted: #888;
+      --border: #333;
+      --green: #27ae60;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    /* ── UTILS ── */
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 72px 0; }
+    .section-alt { background: var(--dark); }
+    .section-light { background: var(--light-gray); color: var(--black); }
+    .tag {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+    h2.section-title {
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+    }
+    .section-light .subtitle { color: #555; }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--red);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .topbar span { opacity: 0.85; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--black);
+      padding: 80px 0 64px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 900;
+      line-height: 1.1;
+      max-width: 760px;
+      margin: 0 auto 24px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 .highlight { color: var(--red); }
+    .hero p.lead {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: #ccc;
+      max-width: 580px;
+      margin: 0 auto 40px;
+    }
+
+    /* ── CONTADOR ── */
+    .countdown-wrapper {
+      background: var(--gray);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--red);
+      border-radius: 8px;
+      padding: 28px 20px 20px;
+      max-width: 480px;
+      margin: 0 auto 44px;
+    }
+    .countdown-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+    .countdown-grid {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+    .countdown-item { text-align: center; }
+    .countdown-item .num {
+      display: block;
+      font-size: clamp(36px, 7vw, 56px);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--white);
+      min-width: 70px;
+    }
+    .countdown-item .unit {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+    .countdown-sep {
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--red);
+      line-height: 1;
+      padding-top: 2px;
+    }
+    .countdown-footer {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ── CTA BUTTON ── */
+    .btn-cta {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: clamp(16px, 2.5vw, 19px);
+      font-weight: 800;
+      text-decoration: none;
+      padding: 18px 40px;
+      border-radius: 4px;
+      letter-spacing: 0.3px;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-cta:hover { background: var(--red-dark); transform: translateY(-2px); }
+    .btn-cta.large { font-size: clamp(17px, 3vw, 22px); padding: 22px 56px; }
+    .btn-sub {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      opacity: 0.75;
+      margin-top: 6px;
+    }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 20px;
+    }
+    .trust-bar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .trust-bar li {
+      font-size: 13px;
+      color: #aaa;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .trust-bar li::before {
+      content: '✓';
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    /* ── O QUE ESTÁ EM JOGO ── */
+    .risk-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 32px;
+      font-size: 15px;
+    }
+    .risk-table th {
+      background: var(--red);
+      color: var(--white);
+      font-weight: 700;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .risk-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #333;
+      color: #ddd;
+    }
+    .risk-table tr:nth-child(even) td { background: rgba(255,255,255,0.03); }
+    .risk-table td.amount { color: var(--red); font-weight: 700; }
+    .risk-callout {
+      background: rgba(192,57,43,0.12);
+      border-left: 4px solid var(--red);
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin-top: 28px;
+      font-size: 15px;
+      color: #ccc;
+    }
+    .risk-callout strong { color: var(--red); }
+
+    /* ── KIT CONTENTS ── */
+    .kit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .kit-item {
+      background: var(--gray);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: border-color 0.2s;
+    }
+    .kit-item:hover { border-color: var(--red); }
+    .kit-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .kit-item-body h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--white);
+    }
+    .kit-item-body p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .kit-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      background: rgba(39,174,96,0.15);
+      color: #4cd080;
+      border: 1px solid rgba(39,174,96,0.3);
+      padding: 2px 7px;
+      border-radius: 2px;
+      margin-top: 6px;
+    }
+
+    /* ── COMO FUNCIONA ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+      position: relative;
+    }
+    .step {
+      text-align: center;
+      padding: 32px 20px;
+      background: var(--gray);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--red);
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .step p { font-size: 14px; color: var(--text-muted); }
+
+    /* ── DEPOIMENTOS ── */
+    .testimonials { display: grid; gap: 20px; margin-top: 32px; }
+    .testimonial {
+      background: var(--white);
+      color: var(--black);
+      border-radius: 8px;
+      padding: 24px 28px;
+      border-left: 4px solid var(--red);
+    }
+    .testimonial blockquote {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: #333;
+    }
+    .testimonial cite {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--black);
+      display: block;
+    }
+    .testimonial cite span {
+      font-weight: 400;
+      color: #666;
+      font-style: normal;
+    }
+    .stars { color: #f39c12; margin-bottom: 8px; font-size: 14px; }
+
+    /* ── ÂNCORA DE PREÇO ── */
+    .price-anchor {
+      text-align: center;
+      padding: 72px 20px;
+      background: var(--dark);
+    }
+    .anchor-headline {
+      font-size: clamp(22px, 4vw, 38px);
+      font-weight: 900;
+      line-height: 1.2;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .price-box {
+      background: var(--gray);
+      border: 2px solid var(--red);
+      border-radius: 12px;
+      padding: 40px 32px;
+      max-width: 400px;
+      margin: 0 auto 32px;
+    }
+    .price-box .from {
+      font-size: 14px;
+      text-decoration: line-through;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .price-box .price {
+      font-size: clamp(48px, 8vw, 72px);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+    .price-box .price sup { font-size: 28px; vertical-align: super; }
+    .price-box .price-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+    .price-includes {
+      margin: 20px 0 0;
+      list-style: none;
+      text-align: left;
+    }
+    .price-includes li {
+      font-size: 14px;
+      color: #ccc;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .price-includes li:last-child { border-bottom: none; }
+    .price-includes li::before { content: '✓'; color: var(--green); font-weight: 700; }
+
+    /* ── FAQ ── */
+    .faq-list { margin-top: 32px; }
+    .faq-item {
+      border-bottom: 1px solid #333;
+      padding: 20px 0;
+    }
+    .faq-q {
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-q .icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--red);
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-q .icon { transform: rotate(45deg); }
+    .faq-a {
+      font-size: 15px;
+      color: #aaa;
+      line-height: 1.7;
+      margin-top: 12px;
+      display: none;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid var(--border);
+      padding: 48px 20px;
+      text-align: center;
+    }
+    .legal-notice {
+      background: var(--dark);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto 24px;
+      text-align: left;
+    }
+    .legal-notice strong { color: #bbb; }
+    footer p { font-size: 13px; color: var(--text-muted); }
+
+    /* ── STICKY CTA (mobile) ── */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--dark);
+      border-top: 2px solid var(--red);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 100;
+      display: none;
+    }
+    .sticky-price { font-size: 22px; font-weight: 900; }
+    .sticky-price span { font-size: 13px; color: var(--text-muted); display: block; font-weight: 400; }
+    .sticky-cta .btn-cta { padding: 14px 24px; font-size: 14px; white-space: nowrap; }
+
+    @media (max-width: 600px) {
+      .sticky-cta { display: flex; }
+      body { padding-bottom: 80px; }
+      .countdown-grid { gap: 6px; }
+      .countdown-item .num { min-width: 54px; }
+    }
+
+    @media (max-width: 480px) {
+      .risk-table { font-size: 13px; }
+      .risk-table th, .risk-table td { padding: 10px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  ⚠️ Prazo legal da NR-1: <strong>26 de maio de 2026</strong> — Fiscalização punitiva já está ativa <span>| Multas conforme NR-28</span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="tag">Urgência legal</div>
+    <h1>Sua empresa está a <span class="highlight" id="days-left">26</span> dias do prazo da NR-1.<br>A multa chega a <span class="highlight">R$&nbsp;67.039.</span></h1>
+    <p class="lead">O Ministério do Trabalho já pode autuar empresas com funcionários CLT que não comprovarem adequação aos riscos psicossociais. Você está preparado?</p>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-wrapper">
+      <div class="countdown-label">⏱ Tempo restante até o prazo</div>
+      <div class="countdown-grid">
+        <div class="countdown-item">
+          <span class="num" id="cd-days">00</span>
+          <span class="unit">dias</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="num" id="cd-hours">00</span>
+          <span class="unit">horas</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="num" id="cd-min">00</span>
+          <span class="unit">min</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="num" id="cd-sec">00</span>
+          <span class="unit">seg</span>
+        </div>
+      </div>
+      <div class="countdown-footer">Prazo: 26/05/2026 às 23:59 (horário de Brasília)</div>
+    </div>
+
+    <a href="[COLE_SEU_LINK_AQUI]" class="btn-cta large">
+      QUERO O KIT AGORA — R$&nbsp;19,90
+      <span class="btn-sub">🔒 Pagamento seguro · Acesso imediato · Garantia de 7 dias</span>
+    </a>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <ul>
+    <li>8 documentos editáveis incluídos</li>
+    <li>Acesso em menos de 1 minuto</li>
+    <li>Funciona para qualquer setor</li>
+    <li>Sem necessidade de consultoria</li>
+    <li>Garantia de 7 dias</li>
+  </ul>
+</div>
+
+<!-- O QUE ESTÁ EM JOGO -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="tag">Risco financeiro</div>
+    <h2 class="section-title">O que está em jogo para a sua empresa</h2>
+    <p class="subtitle">As multas da NR-28 são graduadas por porte da empresa e número de trabalhadores afetados. Veja a tabela oficial:</p>
+
+    <table class="risk-table">
+      <thead>
+        <tr>
+          <th>Infração</th>
+          <th>Grau</th>
+          <th>Valor por trabalhador</th>
+          <th>Máximo por autuação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ausência de PGR com riscos psicossociais</td>
+          <td>Grave</td>
+          <td>R$ 3.351,00</td>
+          <td class="amount">R$ 33.515,00</td>
+        </tr>
+        <tr>
+          <td>Sem política de saúde mental documentada</td>
+          <td>Grave</td>
+          <td>R$ 3.351,00</td>
+          <td class="amount">R$ 33.515,00</td>
+        </tr>
+        <tr>
+          <td>Ausência de canal de escuta e denúncia</td>
+          <td>Médio</td>
+          <td>R$ 1.117,00</td>
+          <td class="amount">R$ 11.170,00</td>
+        </tr>
+        <tr>
+          <td>Falta de avaliação de riscos (COPSOQ)</td>
+          <td>Grave</td>
+          <td>R$ 3.351,00</td>
+          <td class="amount">R$ 33.515,00</td>
+        </tr>
+        <tr>
+          <td>Reincidência (dobro da multa original)</td>
+          <td>Gravíssimo</td>
+          <td>—</td>
+          <td class="amount">R$ 67.039,00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="risk-callout">
+      <strong>Atenção:</strong> Uma única visita do auditor do MTE pode resultar em múltiplas infrações simultâneas. Uma empresa com 15 funcionários e 3 irregularidades pode ser multada em mais de <strong>R$ 40.000 em um único dia.</strong> O kit de adequação custa R$ 19,90.
+    </div>
+  </div>
+</section>
+
+<!-- O QUE INCLUI O KIT -->
+<section class="section">
+  <div class="container">
+    <div class="tag">Conteúdo do kit</div>
+    <h2 class="section-title">8 documentos prontos para implementar</h2>
+    <p class="subtitle">Tudo que o auditor do MTE vai verificar — já formatado, com instruções de preenchimento e exemplos.</p>
+
+    <div class="kit-grid">
+      <div class="kit-item">
+        <div class="kit-icon">📋</div>
+        <div class="kit-item-body">
+          <h4>PGR com Riscos Psicossociais</h4>
+          <p>Programa de Gerenciamento de Riscos atualizado com a seção obrigatória de saúde mental.</p>
+          <span class="kit-badge">Word editável</span>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-icon">📊</div>
+        <div class="kit-item-body">
+          <h4>Questionário COPSOQ-BR</h4>
+          <p>Instrumento validado com tabulação automática em planilha — preencha e o diagnóstico sai pronto.</p>
+          <span class="kit-badge">Excel com fórmulas</span>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-icon">✅</div>
+        <div class="kit-item-body">
+          <h4>Checklist do Auditor</h4>
+          <p>O que o fiscal do MTE vai verificar passo a passo — use para não deixar nenhum item de fora.</p>
+          <span class="kit-badge">Word editável</span>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-icon">📜</div>
+        <div class="kit-item-body">
+          <h4>Política Interna de Saúde Mental</h4>
+          <p>Documento formal de comprometimento da empresa com a saúde psicossocial dos trabalhadores.</p>
+          <span class="kit-badge">Word editável</span>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-icon">✉️</div>
+        <div class="kit-item-body">
+          <h4>Carta aos Trabalhadores</h4>
+          <p>Comunicado interno para ciência e assinatura dos colaboradores sobre a política adotada.</p>
+          <span class="kit-badge">Word editável</span>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-icon">📣</div>
+        <div class="kit-item-body">
+          <h4>Canal de Escuta e Denúncia</h4>
+          <p>Procedimento documentado de acolhimento e tratamento de relatos — exigido pela NR-1.</p>
+          <span class="kit-badge">Word editável</span>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-icon">📈</div>
+        <div class="kit-item-body">
+          <h4>Plano de Ação com Indicadores</h4>
+          <p>Planilha de acompanhamento das ações de melhoria com prazos, responsáveis e métricas.</p>
+          <span class="kit-badge">Excel com fórmulas</span>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-icon">📗</div>
+        <div class="kit-item-body">
+          <h4>Guia de Implementação (4 semanas)</h4>
+          <p>Roteiro semana a semana para implementar tudo do zero, mesmo sem equipe de RH dedicada.</p>
+          <span class="kit-badge">PDF + Word</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="tag">Simples assim</div>
+    <h2 class="section-title">Do pagamento à adequação em 3 passos</h2>
+    <p class="subtitle">Nenhum suporte necessário. Todos os documentos vêm com instruções de preenchimento.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Compra e acesso imediato</h3>
+        <p>Clique no botão, pague via cartão ou Pix. O link de download é entregue na hora — antes mesmo de fechar o navegador.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Baixe e adapte os documentos</h3>
+        <p>Abra o guia de implementação, siga a ordem sugerida e personalize cada documento com o nome e dados da sua empresa.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Implemente e arquive</h3>
+        <p>Reúna as assinaturas, guarde os registros e fique tranquilo. Se o auditor chegar, você tem tudo documentado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section section-light">
+  <div class="container">
+    <div class="tag" style="background:#c0392b">Quem já usou</div>
+    <h2 class="section-title">O que gestores e RHs estão dizendo</h2>
+    <p class="subtitle" style="color:#555">Empresas de setores diferentes, mesmo problema resolvido.</p>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Trabalho em uma distribuidora com 32 funcionários. Quando soube que ia ter fiscalização, entrei em pânico — não tínhamos nada documentado. O kit chegou, segui o guia semana a semana e em menos de um mês estávamos com tudo pronto. O auditor veio, verificou a pasta e foi embora sem notificação. Valeu cada centavo."</blockquote>
+        <cite>Analista de RH <span>— Distribuidora de alimentos, interior de SP</span></cite>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Sou sócio de um escritório de contabilidade com 18 colaboradores. Tentei montar os documentos sozinho a partir das portarias — levei uma semana e ainda ficou incompleto. Com o kit, em dois dias minha equipe tinha tudo assinado e arquivado. A planilha do COPSOQ foi o que mais impressionou: você só preenche as respostas e ela já gera o diagnóstico."</blockquote>
+        <cite>Sócio-gerente <span>— Escritório de contabilidade, Belo Horizonte/MG</span></cite>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Nossa empresa de logística tem turnos variados e eu não sabia como aplicar o questionário de riscos psicossociais nesses casos. O guia de implementação explica exatamente o que fazer para cada situação. Recomendo para qualquer gestor que não queira depender de consultoria cara para resolver algo que pode ser feito internamente."</blockquote>
+        <cite>Coordenadora de Segurança do Trabalho <span>— Transportadora, região Sul</span></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÂNCORA DE PREÇO -->
+<div class="price-anchor">
+  <div class="container">
+    <div class="tag">Preço</div>
+    <p class="anchor-headline">A multa custa <span style="color:var(--red)">R$&nbsp;67.000.</span><br>O kit custa <span style="color:var(--green)">R$&nbsp;19,90.</span></p>
+
+    <div class="price-box">
+      <p class="from">Valor de uma única consultoria: R$ 800,00</p>
+      <p class="price"><sup>R$</sup>19<sup>,90</sup></p>
+      <p class="price-note">pagamento único · sem mensalidade · acesso vitalício</p>
+      <ul class="price-includes">
+        <li>PGR com riscos psicossociais</li>
+        <li>Questionário COPSOQ-BR (Excel)</li>
+        <li>Checklist do auditor do MTE</li>
+        <li>Política interna de saúde mental</li>
+        <li>Carta aos trabalhadores</li>
+        <li>Canal de escuta e denúncia</li>
+        <li>Plano de ação com indicadores</li>
+        <li>Guia de implementação (4 semanas)</li>
+      </ul>
+    </div>
+
+    <a href="[COLE_SEU_LINK_AQUI]" class="btn-cta large">
+      QUERO O KIT AGORA — R$&nbsp;19,90
+      <span class="btn-sub">🔒 Hotmart/Kiwify · Pix ou cartão · Acesso imediato</span>
+    </a>
+    <p style="margin-top:16px; font-size:13px; color:var(--text-muted)">Garantia incondicional de 7 dias. Se não gostar, basta pedir o reembolso.</p>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="tag">Dúvidas frequentes</div>
+    <h2 class="section-title">Perguntas frequentes</h2>
+    <p class="subtitle">Respostas diretas para as dúvidas mais comuns antes de comprar.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Minha empresa tem menos de 10 funcionários. Precisa se adequar?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          Sim. A NR-1 atualizada em 2025 se aplica a todas as empresas com funcionários regidos pela CLT, independentemente do porte. A diferença é que empresas menores geralmente enfrentam multas menores — mas o risco de autuação existe para qualquer tamanho. O kit funciona para empresas de 1 a 500+ funcionários.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Os documentos são prontos ou preciso de um profissional para preencher?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          Os documentos são modelos editáveis com instruções de preenchimento dentro de cada arquivo. O guia de 4 semanas indica exatamente o que preencher em cada etapa. A maioria dos gestores e analistas de RH consegue implementar tudo sozinho, sem contratar consultoria.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Como recebo o kit após o pagamento?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          O acesso é imediato. Assim que o pagamento é confirmado (instantâneo para Pix; alguns minutos para cartão), você recebe um e-mail com o link para baixar o arquivo ZIP contendo todos os 8 documentos. Não há necessidade de criar conta em nenhuma plataforma.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Os documentos têm validade? Precisarei atualizar?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          Os documentos foram elaborados com base na NR-1 atualizada (Portaria MTE nº 1.419/2024) e nas diretrizes vigentes do COPSOQ-BR. A adequação deve ser revisada anualmente — mas o kit já inclui um ciclo completo de implementação e a estrutura de revisão no plano de ação. Atualizações normativas futuras são de responsabilidade da empresa.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Existe garantia? E se eu não ficar satisfeito?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          Sim. O kit tem garantia incondicional de 7 dias corridos a partir da data de compra. Se por qualquer motivo você não ficar satisfeito, basta enviar um e-mail solicitando o reembolso e o valor é devolvido integralmente, sem questionamentos. A solicitação é processada pela plataforma de pagamento em até 5 dias úteis.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="price-anchor" style="padding:80px 20px;">
+  <div class="container">
+    <h2 style="font-size:clamp(22px,4vw,38px); font-weight:900; margin-bottom:16px; text-align:center;">
+      Não deixe para amanhã o que o auditor pode exigir hoje.
+    </h2>
+    <p style="color:#aaa; text-align:center; max-width:500px; margin:0 auto 36px; font-size:16px;">
+      O prazo é 26/05/2026. A fiscalização já está ativa. O kit resolve em 4 semanas.
+    </p>
+    <div style="text-align:center;">
+      <a href="[COLE_SEU_LINK_AQUI]" class="btn-cta large">
+        QUERO O KIT AGORA — R$&nbsp;19,90
+        <span class="btn-sub">🔒 Garantia de 7 dias · Acesso imediato · Sem mensalidade</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="legal-notice">
+    <strong>Aviso Legal:</strong> Este kit é um material educativo e orientativo, elaborado com base nas portarias e normas regulamentadoras vigentes. Não constitui assessoria jurídica, consultoria técnica de segurança do trabalho nem substitui a análise de profissional habilitado (médico do trabalho, engenheiro de segurança do trabalho ou advogado trabalhista) para situações específicas. A adequação à NR-1 pode exigir ações adicionais dependendo do setor, porte e histórico da empresa. Os valores de multa indicados são baseados na tabela da NR-28 e podem variar conforme a gradação aplicada pelo auditor fiscal. A empresa é integralmente responsável pela implementação e manutenção das medidas de adequação.
+  </div>
+  <p>&copy; 2026 Kit NR-1. Todos os direitos reservados.</p>
+  <p style="margin-top:8px;">
+    <a href="#" style="color:var(--text-muted); font-size:12px; text-decoration:none;">Política de Privacidade</a> &nbsp;·&nbsp;
+    <a href="#" style="color:var(--text-muted); font-size:12px; text-decoration:none;">Termos de Uso</a>
+  </p>
+</footer>
+
+<!-- STICKY CTA (mobile) -->
+<div class="sticky-cta">
+  <div class="sticky-price">
+    R$ 19,90
+    <span>acesso imediato</span>
+  </div>
+  <a href="[COLE_SEU_LINK_AQUI]" class="btn-cta">COMPRAR AGORA</a>
+</div>
+
+<script>
+  // ── Countdown ──────────────────────────────────────────────
+  (function () {
+    const deadline = new Date('2026-05-26T23:59:59-03:00').getTime();
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+
+    function tick() {
+      const now = Date.now();
+      const diff = deadline - now;
+
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-min').textContent = '00';
+        document.getElementById('cd-sec').textContent = '00';
+        return;
+      }
+
+      const days  = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const mins  = Math.floor((diff % 3600000) / 60000);
+      const secs  = Math.floor((diff % 60000) / 1000);
+
+      document.getElementById('cd-days').textContent  = pad(days);
+      document.getElementById('cd-hours').textContent = pad(hours);
+      document.getElementById('cd-min').textContent   = pad(mins);
+      document.getElementById('cd-sec').textContent   = pad(secs);
+
+      // Update hero headline day count
+      const heroSpan = document.getElementById('days-left');
+      if (heroSpan) heroSpan.textContent = days;
+    }
+
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  // ── FAQ accordion ──────────────────────────────────────────
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
